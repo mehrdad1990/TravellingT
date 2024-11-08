@@ -1,0 +1,42 @@
+.parallax-text {
+    font-family: "Montserrat", sans-serif;
+    font-size: 100px;
+    font-style: italic;
+    color: transparent;
+    -webkit-text-stroke: 0.15vw black;
+    @media screen and (max-width:590px) {
+          font-size: 50px;
+        }
+  }
+.parallax-text2 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 100px;
+    font-style: italic;
+    @media screen and (max-width:590px) {
+      font-size: 50px;
+    }
+  }
+//   .parallax-text::after {
+//     content: attr(text);
+//     position: absolute;
+//     z-index: 100;
+//     top: 0;
+//     left: 0;
+//     color: transparent;
+//     -webkit-text-stroke: 0.15vw black;
+//   }
+  #homepageimg {
+    width: 50vw;
+    animation: sneakerAnimation 2s cubic-bezier(0.25, 1, 0.5, 1) 1
+      alternate;
+  }
+  @keyframes sneakerAnimation {
+    0%,
+    10% {
+      transform: translate(120vw, 0) rotate(15deg);
+    }
+    90%,
+    100% {
+      transform: translateX(-0vw) ;
+    }
+  }
